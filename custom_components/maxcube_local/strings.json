@@ -31,6 +31,9 @@
     "sensor": {
       "valve_position": {
         "name": "Valve position"
+      },
+      "weekly_schedule": {
+        "name": "Weekly schedule"
       }
     },
     "binary_sensor": {
@@ -45,6 +48,14 @@
       },
       "device_stale": {
         "name": "No data received"
+      }
+    },
+    "button": {
+      "reboot": {
+        "name": "Restart"
+      },
+      "refresh_schedule": {
+        "name": "Refresh schedule"
       }
     }
   }

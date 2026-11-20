@@ -31,6 +31,9 @@
     "sensor": {
       "valve_position": {
         "name": "Ventilstellung"
+      },
+      "weekly_schedule": {
+        "name": "Wochenprogramm"
       }
     },
     "binary_sensor": {
@@ -45,6 +48,14 @@
       },
       "device_stale": {
         "name": "Keine Daten empfangen"
+      }
+    },
+    "button": {
+      "reboot": {
+        "name": "Neustart"
+      },
+      "refresh_schedule": {
+        "name": "Zeitplan aktualisieren"
       }
     }
   }
