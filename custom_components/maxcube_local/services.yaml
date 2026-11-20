@@ -1,0 +1,23 @@
+export_schedule:
+  name: Export schedule
+  description: >-
+    Return the weekly programme of a thermostat in the format of a Home
+    Assistant schedule helper, together with a YAML snippet that can be pasted
+    into the configuration to create that helper. Read-only: the Cube is not
+    changed.
+  fields:
+    device_id:
+      name: Device
+      description: The climate entity of the thermostat to read.
+      required: true
+      selector:
+        entity:
+          domain: climate
+          integration: maxcube_local
+    show_yaml:
+      name: Include YAML
+      description: Include a ready-to-paste YAML snippet in the response.
+      required: false
+      default: true
+      selector:
+        boolean:
